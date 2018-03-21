@@ -53,6 +53,7 @@ $(document).on("click", ".new-search-button", function(){
             var results = response.data;
             console.log(response);
             console.log(response.data[1].url);
+            console.log(response.data[1].images.fixed_height.url);
             console.log(response.data[1].rating);
             
 
@@ -72,8 +73,9 @@ $(document).on("click", ".new-search-button", function(){
                 var gifyImage = $('<img>');
                 // console.log(gifyImage);
 
-                gifyImage.attr("src", results[i].embed_url);
-                console.log(results[i].embed_url);                
+                // gifyImage.attr("src", results[i].embed_url);
+                gifyImage.attr("src", response.data[i].images.fixed_height.url);
+                // console.log(results[i].embed_url);                
                 // gifyImage.attr("alt", "gify");
                 
                 // gifDiv.append(p);
