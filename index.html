@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Giftastic</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" media="screen" href="./assets/css/style.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="./assets/javascript/main.js"></script>
+</head>
+<body>
+    <div class = "jumbotron">
+        <h1 class="display-4">Giftastic!</h1>
+        <p class="lead">Select any topic button to see related gifs. Type in a topic to create a new button with related gifs. </p>
+        <hr class="my-4">
+    </div>
+    <div class="card">
+        <div class="card-header">
+            Lets be Giftastic!
+        </div>
+            <div class="card-body">
+                <form>
+                    <div class="form-row">
+                        <div class="form-group col-md-6">
+                                <label for="search js-search-term">Create Gify Buttons</label>
+                                <input type="text" class="form-control js-search-term " placeholder="hippo">
+                                
+                                <input type="submit" class="btn js-search btn-primary my-2" id="js-search">
+
+                                <div class="js-gify-button">
+
+                            </div>
+                        </div>
+                        </div>
+                        <div class="form-group col-md-6">
+                            <label for="inputAddress">Gify Results</label>
+                            <div class="js-gify-results">
+
+                            </div>
+                            
+                        </div>
+                </form> 
+            </div>
+    </div>  
+ </body>
+</html>
+
+
