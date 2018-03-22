@@ -1,0 +1,17 @@
+.heading {
+background-color: rgb(122, 11, 82);
+color: whitesmoke;
+}
+
+.new-gify {
+    margin: 1em;
+}
+.search{
+    font-size: 1.5em;
+}
+.results {
+    font-size: 1.5em;
+}
+.new-search-button {
+   margin-left: 1em;
+}

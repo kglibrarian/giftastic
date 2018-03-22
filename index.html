@@ -12,36 +12,29 @@
     <script src="./assets/javascript/main.js"></script>
 </head>
 <body>
-    <div class = "jumbotron">
+    <div class = "jumbotron heading">
         <h1 class="display-4">Giftastic!</h1>
-        <p class="lead">Select any topic button to see related gifs. Type in a topic to create a new button with related gifs. </p>
+        <p class="lead">Type in a topic to create a new button with related gifs. </p>
         <hr class="my-4">
     </div>
     <div class="card">
-        <div class="card-header">
-            Lets be Giftastic!
-        </div>
             <div class="card-body">
                 <form>
                     <div class="form-row">
                         <div class="form-group col-md-6">
-                                <label for="search js-search-term">Create Gify Buttons</label>
-                                <input type="text" class="form-control js-search-term " placeholder="hippo">
-                                
-                                <input type="submit" class="btn js-search btn-primary my-2" id="js-search">
-
-                                <div class="js-gify-button">
-
-                            </div>
+                            <label for="search js-search-term"class="search">Search for a topic:</label>
+                            <input type="text" class="form-control js-search-term " placeholder="hippo">
+                            <input type="submit" class="btn js-search btn-primary my-2" id="js-search">
+                            <div><p class="search">Gify Buttons:</p></div>
+                            <div class="js-gify-button"> </div>
                         </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group col-md-6 ">
+                            <div class = "search">Gify Results:</div>
+                            <div class="js-gify-results"></div>
                         </div>
-                        <div class="form-group col-md-6">
-                            <label for="inputAddress">Gify Results</label>
-                            <div class="js-gify-results">
-
-                            </div>
-                            
-                        </div>
+                    </div>
                 </form> 
             </div>
     </div>  
