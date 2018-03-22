@@ -61,20 +61,15 @@ $(document).on("click", ".new-search-button", function(){
                 var gifDiv = $('<div class="new-gifs">')
                 // console.log(gifDiv);
 
-                // var p = $('<p>'); 
-                // console.log(p);
+                var p = $('<p>'); 
+                console.log(p);
 
-                // p.text(results[i].rating);
-                // console.log(p.text(results[i].rating));
+                p.text(results[i].rating);
+                console.log(p.text(results[i].rating));
 
                 var gifyImage = $('<img>');
                 console.log(gifyImage);
 
-                // gifyImage.attr("src", results[i].embed_url);
-                // gifyImage.attr("src", response.data[i].images.fixed_height.url);
-                // gifyImage.attr("src", response.data[i].images.fixed_height_still.url);
-                // console.log(results[i].embed_url);                
-                // gifyImage.attr("alt", "gify");
                 gifyImage.attr("src", response.data[i].images.fixed_height_still.url);
                 gifyImage.addClass("new-gify");
                 gifyImage.attr("data-still", response.data[i].images.fixed_height_still.url);
@@ -83,8 +78,8 @@ $(document).on("click", ".new-search-button", function(){
                 console.log(gifyImage);
 
                  
-                // console.log("This is my gify Image " + gifyImage);       
-                // gifDiv.append(p);
+                     
+                gifDiv.prepend(p);
                 gifDiv.prepend(gifyImage);
 
                 $('.js-gify-results').prepend(gifDiv);
